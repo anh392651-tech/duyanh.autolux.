@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="AutoLux - website bán ô tô cao cấp xây dựng bằng HTML, CSS, JavaScript và Bootstrap.">
+  <title>AutoLux | Showroom xe sang Việt Nam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="topbar d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-geo-alt me-2"></i>Hà Nội, Việt Nam</div>
+      <div class="d-flex gap-4"><span><i class="bi bi-telephone me-2"></i>0909 999 999</span><span><i
+            class="bi bi-clock me-2"></i>08:00 - 20:00</span></div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-nav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home"><span class="brand-mark">A</span><span>AUTO<b>LUX</b><small>Luxury Car
+            Gallery</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cars">Xe đang bán</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">Tin tức</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-gold" href="#contact"><i class="bi bi-chat-dots me-2"></i>Liên
+              hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators"><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
+          class="active"></button><button type="button" data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"></button><button type="button" data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"></button></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active hero-slide hero-one">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content"><span class="eyebrow">ĐẲNG CẤP KHÔNG GIỚI HẠN</span>
+            <h1>Chạm tới chiếc xe<br><span>trong mơ của bạn</span></h1>
+            <p>Tuyển chọn xe sang chính hãng, hồ sơ minh bạch và dịch vụ hậu mãi chuyên nghiệp.</p>
+            <div class="d-flex flex-wrap gap-3"><a href="#cars" class="btn btn-gold btn-lg">Khám phá xe</a><a
+                href="#contact" class="btn btn-outline-light btn-lg">Đặt lịch xem xe</a></div>
+          </div>
+        </div>
+        <div class="carousel-item hero-slide hero-two">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content"><span class="eyebrow">BỘ SƯU TẬP SUV CAO CẤP</span>
+            <h1>Mạnh mẽ trong từng<br><span>chuyển động</span></h1>
+            <p>Mercedes-Benz, Porsche, BMW, Land Rover và nhiều thương hiệu cao cấp.</p><a href="#cars"
+              class="btn btn-gold btn-lg">Xem kho xe</a>
+          </div>
+        </div>
+        <div class="carousel-item hero-slide hero-three">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content"><span class="eyebrow">UY TÍN TẠO NÊN GIÁ TRỊ</span>
+            <h1>Thu mua & ký gửi<br><span>xe sang toàn quốc</span></h1>
+            <p>Định giá nhanh, thủ tục gọn và hỗ trợ tài chính linh hoạt.</p><a href="#contact"
+              class="btn btn-gold btn-lg">Nhận báo giá</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span
+          class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span
+          class="carousel-control-next-icon"></span></button>
+    </div>
+  </header>
+
+  <section class="search-panel-wrap">
+    <div class="container">
+      <div class="search-panel shadow-lg">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-6 col-xl-3">
+            <label class="form-label" for="searchInput">Từ khóa</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input id="searchInput" class="form-control" type="search" placeholder="Tên xe, hãng xe, động cơ...">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-2">
+            <label class="form-label" for="brandFilter">Hãng xe</label>
+            <select id="brandFilter" class="form-select">
+              <option value="all">Tất cả hãng xe</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 col-xl-2">
+            <label class="form-label" for="categoryFilter">Phân khúc</label>
+            <select id="categoryFilter" class="form-select">
+              <option value="all">Tất cả phân khúc</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 col-xl-2">
+            <label class="form-label" for="typeFilter">Kiểu xe</label>
+            <select id="typeFilter" class="form-select">
+              <option value="all">Tất cả kiểu xe</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 col-xl-2">
+            <label class="form-label" for="priceFilter">Khoảng giá</label>
+            <select id="priceFilter" class="form-select">
+              <option value="all">Tất cả mức giá</option>
+              <option value="under1">Dưới 1 tỷ</option>
+              <option value="1to2">Từ 1 - dưới 2 tỷ</option>
+              <option value="2to5">Từ 2 - 5 tỷ</option>
+              <option value="5to20">Trên 5 - 20 tỷ</option>
+              <option value="over20">Trên 20 tỷ</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 col-xl-1 d-grid">
+            <button id="searchBtn" class="btn btn-gold btn-lg" type="button" aria-label="Tìm kiếm xe">
+              <i class="bi bi-search"></i>
+              <span class="d-xl-none ms-2">Tìm kiếm xe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand-strip py-4">
+    <div class="container">
+      <div id="brandButtons" class="brand-buttons"></div>
+    </div>
+  </section>
+
+  <main>
+    <section id="cars" class="section-padding bg-light-subtle">
+      <div class="container">
+        <div class="section-heading text-center"><span class="section-kicker">PREMIUM COLLECTION</span>
+          <h2>Danh sách xe đang bán</h2>
+          <p>Giá niêm yết tham khảo tại Việt Nam, cập nhật ngày 15/06/2026. Giá thực tế có thể thay đổi theo phiên bản,
+            màu xe và đại lý.</p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <p id="resultCount" class="mb-0 text-secondary"></p><select id="sortSelect" class="form-select sort-select">
+            <option value="default">Sắp xếp mặc định</option>
+            <option value="priceAsc">Giá thấp đến cao</option>
+            <option value="priceDesc">Giá cao đến thấp</option>
+            <option value="yearDesc">Năm mới nhất</option>
+          </select>
+        </div>
+        <div id="carGrid" class="row g-4"></div>
+        <div class="text-center mt-5"><button id="loadMoreBtn" class="btn btn-outline-dark px-5 py-3">Tải thêm xe <i
+              class="bi bi-arrow-down ms-2"></i></button></div>
+      </div>
+    </section>
+
+    <section id="services" class="section-padding services-section">
+      <div class="container">
+        <div class="section-heading text-center text-white"><span class="section-kicker">DỊCH VỤ TOÀN DIỆN</span>
+          <h2>Đồng hành trên mọi hành trình</h2>
+          <p class="text-white-50">Giải pháp trọn gói dành cho khách hàng sở hữu xe cao cấp.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card"><i class="bi bi-car-front"></i>
+              <h4>Mua bán xe sang</h4>
+              <p>Kho xe đa dạng, kiểm định kỹ và hồ sơ rõ ràng.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card"><i class="bi bi-arrow-left-right"></i>
+              <h4>Thu mua & ký gửi</h4>
+              <p>Định giá minh bạch, giao dịch nhanh chóng toàn quốc.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card"><i class="bi bi-bank"></i>
+              <h4>Hỗ trợ trả góp</h4>
+              <p>Tư vấn khoản vay phù hợp và quy trình duyệt nhanh.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card"><i class="bi bi-shield-check"></i>
+              <h4>Bảo hành hậu mãi</h4>
+              <p>Chăm sóc sau bán hàng và bảo dưỡng chuyên nghiệp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image"><img
+                src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=85"
+                alt="Showroom xe sang" loading="lazy">
+              <div class="experience-box"><strong>10+</strong><span>Năm kinh nghiệm</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6"><span class="section-kicker">VỀ AUTOLUX</span>
+            <h2 class="display-6 fw-bold mb-4">Nơi niềm đam mê xe sang trở thành trải nghiệm khác biệt</h2>
+            <p class="lead text-secondary">AutoLux là showroom mô phỏng phục vụ bài tập thiết kế website bán ô tô bằng
+              HTML, CSS, JavaScript và Bootstrap.</p>
+            <p class="text-secondary">Giao diện tập trung vào trải nghiệm cao cấp, thông tin xe rõ ràng, bộ lọc thuận
+              tiện và khả năng hiển thị tốt trên điện thoại, máy tính bảng lẫn máy tính.</p>
+            <div class="row g-3 mt-3">
+              <div class="col-6">
+                <div class="stat-box"><strong>500+</strong><span>Xe đã giao</span></div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box"><strong>98%</strong><span>Khách hài lòng</span></div>
+              </div>
+            </div><a href="#contact" class="btn btn-dark mt-4 px-4 py-3">Tìm hiểu thêm <i
+                class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section-padding bg-light-subtle">
+      <div class="container">
+        <div class="section-heading text-center"><span class="section-kicker">GÓC KIẾN THỨC</span>
+          <h2>Tin tức ô tô</h2>
+          <p>Cập nhật xu hướng, kinh nghiệm mua xe và công nghệ mới.</p>
+        </div>
+        <div class="row g-4" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <section class="delivery-section section-padding">
+      <div class="container">
+        <div class="section-heading text-center text-white"><span class="section-kicker">CUSTOMER MOMENTS</span>
+          <h2>Lễ bàn giao xe</h2>
+          <p class="text-white-50">Mỗi chiếc xe được trao đi là một hành trình mới bắt đầu.</p>
+        </div>
+        <div class="row g-3 gallery-grid">
+          <div class="col-6 col-lg-3"><img
+              src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80"
+              alt="Bàn giao xe 1" loading="lazy"></div>
+          <div class="col-6 col-lg-3"><img
+              src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80"
+              alt="Bàn giao xe 2" loading="lazy"></div>
+          <div class="col-6 col-lg-3"><img
+              src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80"
+              alt="Bàn giao xe 3" loading="lazy"></div>
+          <div class="col-6 col-lg-3"><img
+              src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=800&q=80"
+              alt="Bàn giao xe 4" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5"><span class="section-kicker">LIÊN HỆ SHOWROOM</span>
+            <h2 class="display-6 fw-bold">Đặt lịch xem xe ngay hôm nay</h2>
+            <p class="text-secondary">Để lại thông tin, đội ngũ tư vấn sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+            <div class="contact-info">
+              <div><i class="bi bi-geo-alt"></i><span><b>Địa chỉ</b>123 Trịnh Văn Bô, Hà Nội</span></div>
+              <div><i class="bi bi-telephone"></i><span><b>Hotline</b>0909 999 999</span></div>
+              <div><i class="bi bi-envelope"></i><span><b>Email</b>contact@autolux.vn</span></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="contact-form shadow">
+              <div class="row g-3">
+                <div class="col-md-6"><label class="form-label">Họ và tên</label><input class="form-control" required
+                    placeholder="Nguyễn Văn A"></div>
+                <div class="col-md-6"><label class="form-label">Số điện thoại</label><input class="form-control"
+                    required pattern="[0-9]{9,11}" placeholder="09xxxxxxxx"></div>
+                <div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control"
+                    placeholder="example@gmail.com"></div>
+                <div class="col-md-6"><label class="form-label">Xe quan tâm</label><select id="contactCar"
+                    class="form-select" required>
+                    <option value="">Chọn hãng xe quan tâm</option>
+                  </select></div>
+                <div class="col-12"><label class="form-label">Nội dung</label><textarea class="form-control" rows="4"
+                    placeholder="Tôi muốn đặt lịch xem xe..."></textarea></div>
+                <div class="col-12 d-grid"><button class="btn btn-gold btn-lg" type="submit">Gửi yêu cầu tư vấn</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4"><a class="brand footer-brand" href="#home"><span
+              class="brand-mark">A</span><span>AUTO<b>LUX</b><small>Luxury Car Gallery</small></span></a>
+          <p class="mt-4 text-white-50">Website AutoLux phục vụ bài tập môn thiết kế web bằng HTML, CSS, JavaScript và
+            Bootstrap.</p>
+          <div class="socials"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i
+                class="bi bi-youtube"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                class="bi bi-tiktok"></i></a></div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Danh mục</h5><a href="#home">Trang chủ</a><a href="#cars">Xe đang bán</a><a href="#services">Dịch vụ</a><a
+            href="#news">Tin tức</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Hỗ trợ</h5><a href="#">Chính sách bảo mật</a><a href="#">Chính sách bảo hành</a><a href="#">Hướng dẫn mua
+            xe</a><a href="#">Câu hỏi thường gặp</a>
+        </div>
+        <div class="col-lg-3">
+          <h5>Đăng ký nhận tin</h5>
+          <p class="text-white-50">Nhận thông tin xe mới và ưu đãi.</p>
+          <div class="input-group"><input class="form-control" placeholder="Email của bạn"><button
+              class="btn btn-gold"><i class="bi bi-send"></i></button></div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex flex-column flex-md-row justify-content-between text-white-50 small"><span>© 2026 AutoLux.
+          Student Project.</span><span>Designed with Bootstrap 5</span></div>
+    </div>
+  </footer>
+
+  <div class="floating-actions"><a class="float-btn phone" href="tel:0909999999" title="Gọi điện"><i
+        class="bi bi-telephone-fill"></i></a><a class="float-btn chat" href="#contact" title="Nhắn tin"><i
+        class="bi bi-chat-dots-fill"></i></a></div>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Quay lại đầu trang"><i
+      class="bi bi-arrow-up"></i></button>
+
+  <div class="modal fade" id="carModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content"><button type="button" class="btn-close modal-close" data-bs-dismiss="modal"></button>
+        <div id="modalBody" class="modal-body p-0"></div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast">
+      <div class="toast-header"><i class="bi bi-check-circle-fill text-success me-2"></i><strong
+          class="me-auto">AutoLux</strong><button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">Yêu cầu của bạn đã được ghi nhận!</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
